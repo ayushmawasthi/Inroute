@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "163820957108",
+    "firebase_url": "https://vicinity-19365.firebaseio.com",
+    "project_id": "vicinity-19365",
+    "storage_bucket": "vicinity-19365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163820957108:android:88aefc5f18ecd10c1e56e1",
+        "android_client_info": {
+          "package_name": "com.tcs.indoorvicinity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163820957108-84n4c92ve1s3gajv7qp0lve04lpjvuri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSXw1v92jp4ZtOCBNOI_selntAhbP03Xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163820957108-84n4c92ve1s3gajv7qp0lve04lpjvuri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

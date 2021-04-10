@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserHome">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="40dp">
+    <LinearLayout
+        android:padding="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7ECF3"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/userhomesearchbutton"
+            android:src="@drawable/searchvector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <AutoCompleteTextView
+            android:id="@+id/userhomesearchbar"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter item to be searched"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="40dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#CBCFF6"
+        >
+    <TextView
+        android:id="@+id/temp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Products"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/llshop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#B0F899"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userhomeproduct1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="40dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#CBCFF6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Shops"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llproduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F3AEAE"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userhomeshop1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

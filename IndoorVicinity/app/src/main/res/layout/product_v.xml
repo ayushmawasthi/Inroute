@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+    android:background="#CBF1F3">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:contentPadding="4dp"
+        android:elevation="20dp"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="3dp"
+        android:outlineSpotShadowColor="#39E1F3"
+        android:outlineAmbientShadowColor="#4AE6BE">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:elevation="20dp"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="19dp"
+        android:padding="1dp"
+        app:cardBackgroundColor="#C3F4EF"
+        android:outlineSpotShadowColor="#E5FDD0"
+        android:outlineAmbientShadowColor="#57D4FA">
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:id="@+id/vendor_product_img"
+    android:src="@drawable/car1"
+    android:elevation="30dp"
+    android:layout_margin="2dp"
+
+    />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2144EF"
+            android:id="@+id/vendor_product_name"
+            android:text="Item1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="#000000"
+            android:id="@+id/vendor_product_price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textColor="#FF0505"
+                android:paddingLeft="15dp"
+                android:id="@+id/vendor_product_discount"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textColor="#EA0909"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="end|center_vertical"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#00C3C0"
+    ></LinearLayout>
+
+</LinearLayout>
